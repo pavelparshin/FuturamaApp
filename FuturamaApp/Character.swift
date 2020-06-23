@@ -9,7 +9,7 @@
 struct CharacterQuote: Decodable {
     var character: String
     var quote: String
-    var image: String
+    var image: String?
 }
 
 class MainCharacters {

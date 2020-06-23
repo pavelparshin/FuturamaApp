@@ -21,6 +21,7 @@ class QuotesTableViewController: UITableViewController {
         super.viewDidLoad()
         
         navigationItem.title = character + "'s quotes"
+        tableView.rowHeight = 100
         
         NetworkManager.shared.quoteData(from: urlString) { quote in
             DispatchQueue.main.async {
@@ -50,11 +51,23 @@ class QuotesTableViewController: UITableViewController {
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.text = character.quote
         
-        
+        DispatchQueue.global().async {
+            guard let stringImageUrl = character.image else { return }
+            guard let imageUrl = URL(string: stringImageUrl) else { return }
+            do {
+                let imageData = try Data(contentsOf: imageUrl)
+                DispatchQueue.main.async {
+                    cell.imageView?.image = UIImage(data: imageData)
+                    cell.imageView?.sizeThatFits(CGSize(width: 50, height: 50))
+                }
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
     }
 
     private func getUrl(urlString: String, character: String) -> String {
-        let correctCharacter = character.replacingOccurrences(of: " ", with: "+")
+        let correctCharacter = character.replacingOccurrences(of: " ", with: "-")
         return urlString + correctCharacter
     }
 
