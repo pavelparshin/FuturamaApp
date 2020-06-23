@@ -22,6 +22,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="veI-Wm-EfD" kind="show" identifier="quotes" id="5hQ-yH-nQi"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -57,6 +60,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAo-NZ-dMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="127.5" y="87.676056338028175"/>
+        </scene>
+        <!--Character's Quotes-->
+        <scene sceneID="UY7-hd-o07">
+            <objects>
+                <tableViewController id="veI-Wm-EfD" customClass="QuotesTableViewController" customModule="FuturamaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Lmn-Bm-OE5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="quotesCell" id="YGb-GH-yYx">
+                                <rect key="frame" x="16" y="55.5" width="288" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YGb-GH-yYx" id="a6D-Fy-BSi">
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="veI-Wm-EfD" id="ZkX-6l-qNa"/>
+                            <outlet property="delegate" destination="veI-Wm-EfD" id="KVf-th-ikl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Character's Quotes" id="2q2-fd-Atv"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYZ-Kx-Ryg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612.5" y="87.676056338028175"/>
         </scene>
     </scenes>
 </document>

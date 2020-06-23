@@ -12,11 +12,13 @@ struct CharacterQuote: Decodable {
     var image: String
 }
 
-class MainCharacter {
+class MainCharacters {
+
+    static let shared = MainCharacters()
     
-    let shared = MainCharacter()
+    private init() {}
     
     let character = ["Bender", "Fry", "Leela", "Professor Farnsworth", "Amy", "Zapp Brannigan",
-    "Lurr", "Dr Zoidberg", "Linda the reporter", "Bob Barker", "Hermes", "Morgan Proctor",
-    "Mom", "Robot Mob", "Giant Bender", "Kif", "Don bot"]
+                     "Lurr", "Dr Zoidberg", "Linda the reporter", "Bob Barker", "Hermes", "Morgan Proctor",
+                     "Mom", "Robot Mob", "Giant Bender", "Kif", "Don bot"]
 }

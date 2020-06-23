@@ -15,6 +15,7 @@
 		2B4E23C524A1E5D70022138D /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E23C424A1E5D70022138D /* MainTableViewController.swift */; };
 		2B4E23CD24A1E84A0022138D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E23CC24A1E84A0022138D /* Character.swift */; };
 		2B4E23CF24A1EA520022138D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E23CE24A1EA520022138D /* NetworkManager.swift */; };
+		2B4E23D124A1F3540022138D /* QuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E23D024A1F3540022138D /* QuotesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2B4E23C424A1E5D70022138D /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		2B4E23CC24A1E84A0022138D /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		2B4E23CE24A1EA520022138D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2B4E23D024A1F3540022138D /* QuotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				2B4E23C424A1E5D70022138D /* MainTableViewController.swift */,
+				2B4E23D024A1F3540022138D /* QuotesTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			files = (
 				2B4E23B124A1E5700022138D /* AppDelegate.swift in Sources */,
 				2B4E23C524A1E5D70022138D /* MainTableViewController.swift in Sources */,
+				2B4E23D124A1F3540022138D /* QuotesTableViewController.swift in Sources */,
 				2B4E23CF24A1EA520022138D /* NetworkManager.swift in Sources */,
 				2B4E23B324A1E5700022138D /* SceneDelegate.swift in Sources */,
 				2B4E23CD24A1E84A0022138D /* Character.swift in Sources */,
