@@ -31,4 +31,9 @@ class NetworkManager {
             }
         }.resume()
     }
+    
+    func getUrl(character: String) -> String {
+        let correctCharacter = character.replacingOccurrences(of: " ", with: "-")
+        return urlString + correctCharacter
+    }
 }

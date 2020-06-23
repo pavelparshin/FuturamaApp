@@ -12,7 +12,7 @@ class QuotesTableViewController: UITableViewController {
     
     var character: String!
     var urlString: String {
-        getUrl(urlString: NetworkManager.shared.urlString, character: character)
+        NetworkManager.shared.getUrl(character: character)
     }
     
     private var characterQuotes: [CharacterQuote] = []
@@ -65,10 +65,4 @@ class QuotesTableViewController: UITableViewController {
             }
         }
     }
-
-    private func getUrl(urlString: String, character: String) -> String {
-        let correctCharacter = character.replacingOccurrences(of: " ", with: "-")
-        return urlString + correctCharacter
-    }
-
 }
